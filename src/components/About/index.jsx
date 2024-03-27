@@ -1,13 +1,70 @@
 import { Box } from "@mui/material";
 import React from "react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { aboutCarousalData } from "../../constants";
+import { SliderComponent } from "../SliderComponent";
 import styles from "./styles";
-import "./styles.css";
+
+const data = [
+  {
+    title: "Milan",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0444_city-header_milan_marianna-tomaselli-768x432.jpg",
+  },
+  {
+    title: "Hong Kong",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0378_hong-kong_jisu-choi_final_header-1-768x512.jpg",
+  },
+  {
+    title: "Prague",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/location-page-header-prague-greta-samuel-768x512.jpg",
+  },
+  {
+    title: "Florence",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0440_florence_giordano-poloni_final_header-768x512.jpg",
+  },
+  {
+    title: "Venice",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0449_venice_marianna-tomaselli_final_header-768x432.jpg",
+  },
+  {
+    title: "Los Angeles",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/venice-beach_final-768x512.jpg",
+  },
+  {
+    title: "Milan",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0444_city-header_milan_marianna-tomaselli-768x432.jpg",
+  },
+  {
+    title: "Hong Kong",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0378_hong-kong_jisu-choi_final_header-1-768x512.jpg",
+  },
+  {
+    title: "Prague",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/location-page-header-prague-greta-samuel-768x512.jpg",
+  },
+  {
+    title: "Florence",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0440_florence_giordano-poloni_final_header-768x512.jpg",
+  },
+  {
+    title: "Venice",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0449_venice_marianna-tomaselli_final_header-768x432.jpg",
+  },
+  {
+    title: "Los Angeles",
+    image:
+      "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/venice-beach_final-768x512.jpg",
+  },
+];
 
 const About = () => {
   return (
@@ -35,25 +92,13 @@ const About = () => {
           />
         </Box>
       </Box>
-
-      <Box>
-        <Swiper
-          watchSlidesProgress={true}
-          centeredSlides={true}
-          slidesPerView={5}
-          navigation
-          modules={[Navigation]}
-          className="mySwiper"
-        >
-          {aboutCarousalData.map(({ image, text }, index) => {
-            return (
-              <SwiperSlide key={index} style={styles.slide}>
-                <Box component="img" src={image} sx={styles.slideImage} />
-                <Box sx={styles.slideText}>{text}</Box>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+      <Box sx={{ marginTop: "3rem" }}>
+        <SliderComponent
+          autoplay
+          autoplaySpeed={6000}
+          slideNum={5}
+          data={data}
+        />
       </Box>
     </Box>
   );

@@ -48,7 +48,10 @@ const styles = {
   },
 
   imageWrapper: {
-    display: "flex",
+    display: {
+      xs: "none",
+      md: "flex",
+    },
     justifyContent: "center",
     alignItems: "center",
     width: "50%",
