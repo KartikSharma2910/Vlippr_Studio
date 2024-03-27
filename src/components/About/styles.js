@@ -25,14 +25,26 @@ const styles = {
   },
 
   heading: {
-    fontSize: "18px",
+    fontSize: {
+      xs: "14px",
+      sm: "16px",
+      md: "18px",
+    },
     background: "linear-gradient(98.88deg, #6C7BFF -2.99%, #00C2FF 102.28%)",
   },
 
   subheading: {
-    fontSize: "60px",
+    fontSize: {
+      xs: "30px",
+      sm: "40px",
+      md: "60px",
+    },
     fontWeight: 500,
-    lineHeight: "100px",
+    lineHeight: {
+      xs: "40px",
+      sm: "50px",
+      md: "100px",
+    },
     "& .outlineText": {
       "-webkit-text-stroke-width": "2px",
       "-webkit-text-stroke-color": "white",
@@ -42,7 +54,10 @@ const styles = {
   },
 
   description: {
-    fontSize: "16px",
+    fontSize: {
+      xs: "14px",
+      md: "16px",
+    },
     fontWeight: 400,
     color: "#8C8C8C",
   },

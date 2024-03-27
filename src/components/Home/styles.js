@@ -20,7 +20,10 @@ const styles = {
       xs: "100%",
       md: "60%",
     },
-    gap: "20px",
+    gap: {
+      xs: "30px",
+      sm: "20px",
+    },
     "& .welcome": {
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
@@ -28,14 +31,26 @@ const styles = {
   },
 
   heading: {
-    fontSize: "20px",
+    fontSize: {
+      xs: "15px",
+      sm: "18px",
+      md: "20px",
+    },
     background: "linear-gradient(98.88deg, #6C7BFF -2.99%, #00C2FF 102.28%)",
   },
 
   subheading: {
-    fontSize: "90px",
+    fontSize: {
+      xs: "30px",
+      sm: "80px",
+      md: "90px",
+    },
     fontWeight: 500,
-    lineHeight: "100px",
+    lineHeight: {
+      xs: "40px",
+      sm: "80px",
+      md: "100px",
+    },
     "& .outlineText": {
       "-webkit-text-stroke-width": "2px",
       "-webkit-text-stroke-color": "white",
@@ -45,7 +60,11 @@ const styles = {
   },
 
   description: {
-    fontSize: "26px",
+    fontSize: {
+      xs: "22px",
+      sm: "24px",
+      md: "26px",
+    },
     fontWeight: 400,
   },
 
