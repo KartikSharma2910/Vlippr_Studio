@@ -38,6 +38,109 @@ const styles = {
       backgroundColor: " rgba(0, 0, 0, 0.5)",
     },
   },
+
+  slideWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "3rem",
+    marginTop: "3rem",
+  },
+
+  clientsWrapper: {
+    display: "flex",
+    flexWrap: "wrap",
+    rowGap: "3rem",
+    gap: "2rem",
+    justifyContent: "space-between",
+    width: "90%",
+    margin: "2rem auto",
+  },
+
+  client: {
+    filter: "grayscale(100%)",
+    objectFit: "contain",
+    height: {
+      xs: "50px",
+      sm: "80px",
+    },
+    width: {
+      xs: "60px",
+      sm: "90px",
+    },
+  },
+
+  imagesBoxer: {
+    display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
+    height: "450px",
+    opacity: "0.9",
+    marginTop: "2.5rem",
+  },
+
+  leftBox: {
+    position: "relative",
+    height: {
+      xs: "50%",
+      md: "100%",
+    },
+    width: {
+      xs: "100%",
+      md: "50%",
+    },
+  },
+
+  imageBox: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  },
+
+  rightBox: {
+    display: "flex",
+    flexDirection: "column",
+    height: {
+      xs: "50%",
+      md: "100%",
+    },
+    width: {
+      xs: "100%",
+      md: "50%",
+    },
+  },
+
+  rightMiniBoxUpper: {
+    display: "flex",
+    height: "50%",
+  },
+
+  rightMiniBoxLower: {
+    height: "50%",
+  },
+
+  miniBox: {
+    width: "50%",
+  },
+
+  textContainer: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    textAlign: "center",
+    transform: "translate(-50%,-50%)",
+  },
+
+  textHead: {
+    fontSize: "12px",
+  },
+
+  textDesc: {
+    fontSize: "18px",
+    fontWeight: 600,
+  },
 };
 
 export default styles;

@@ -40,7 +40,7 @@ const Navbar = () => {
     <Box
       sx={{
         ...styles.wrapper,
-        backgroundColor: isScrolled ? "white" : "transparent",
+        backgroundColor: isScrolled ? "#fcfcfc" : "transparent",
         borderBottom: isScrolled ? "none" : "1px solid white",
       }}
     >

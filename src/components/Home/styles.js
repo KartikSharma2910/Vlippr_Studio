@@ -3,6 +3,21 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    mixBlendMode: "difference",
+    backgroundColor: "#0A0A0A",
+  },
+
+  coverImage: {
+    display: {
+      xs: "none",
+      sm: "block",
+    },
+    position: "absolute",
+    top: 0,
+    left: 0,
+    objectFit: "cover",
+    objectPosition: "center",
+    mixBlendMode: "normal",
   },
 
   dummy: {
@@ -16,6 +31,7 @@ const styles = {
   container: {
     display: "flex",
     flexDirection: "column",
+    zIndex: 10,
     width: {
       xs: "100%",
       md: "60%",
@@ -55,7 +71,6 @@ const styles = {
       "-webkit-text-stroke-width": "2px",
       "-webkit-text-stroke-color": "white",
       "-webkit-text-fill-color": "transparent",
-      backgroundColor: " rgba(0, 0, 0, 0.5)",
     },
   },
 
@@ -69,7 +84,14 @@ const styles = {
   },
 
   button: {
-    width: "280px",
+    width: {
+      xs: "240px",
+      sm: "280px",
+    },
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
     border: "1px solid white",
     color: "white",
   },

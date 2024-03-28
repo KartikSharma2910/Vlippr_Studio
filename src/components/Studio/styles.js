@@ -38,6 +38,43 @@ const styles = {
       backgroundColor: " rgba(0, 0, 0, 0.5)",
     },
   },
+
+  slideWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "3rem",
+    marginTop: "3rem",
+  },
+
+  slideText: {
+    width: {
+      xs: "90%",
+      sm: "70%",
+      md: "50%",
+    },
+    textAlign: "center",
+    margin: "0 auto",
+    color: "#8C8C8C",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
+  },
+
+  button: {
+    margin: "0 auto",
+    width: {
+      xs: "300px",
+      sm: "360px",
+    },
+    border: "1px solid white",
+    color: "white",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
+  },
 };
 
 export default styles;

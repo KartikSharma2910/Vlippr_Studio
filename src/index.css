@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: black;
+  background-color: #131313;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   transition: all 400ms ease;
@@ -29,4 +29,10 @@ section {
 
 .container {
   padding: 25px 60px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 15px 40px;
+  }
 }

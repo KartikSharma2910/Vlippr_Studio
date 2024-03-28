@@ -8,7 +8,10 @@ const styles = {
     top: 0,
     zIndex: 100,
     height: "65px",
-    padding: "15px 60px",
+    padding: {
+      xs: "15px 40px",
+      md: "15px 60px",
+    },
     transition: "all 400ms",
   },
 
