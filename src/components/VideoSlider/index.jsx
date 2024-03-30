@@ -1,26 +1,24 @@
 import { Box } from "@mui/material";
-import { Fragment, useRef } from "react";
+import { Fragment, useRef, useState } from "react";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { useResponsive } from "../../hooks/useResponsive";
-import { FullWidthBgImage } from "./FullWidthBgImage";
+import VideoPlayer from "../VideoPlayer";
 import "./styles.css";
 
-export const SliderComponent = ({
+export const VideoSlider = ({
   data,
-  label,
   slideNum,
   mobileSlides = 1,
-  tabSlides = 3,
+  tabSlides = 2,
   autoplay,
   autoplaySpeed,
   showLeftArrow = false,
   showRightArrow = false,
-  borderRadius = "10px",
-  height = "300px",
 }) => {
+  const [idx, setIdx] = useState(-1);
   const { screenType } = useResponsive();
   const sliderRef = useRef();
 
@@ -30,10 +28,10 @@ export const SliderComponent = ({
     swipeToSlide: true,
     infinite: true,
     autoplay: autoplay,
+    autoplaySpeed: autoplaySpeed,
     lazyLoad: "ondemand", // Enable lazy loading
     cssEase: "ease", // Use ease for smoother transitions
     adaptiveHeight: true, // Adjust slider height based on content
-    autoplaySpeed: autoplaySpeed,
     slidesToShow:
       screenType === "MOBILE"
         ? mobileSlides
@@ -46,7 +44,11 @@ export const SliderComponent = ({
         : screenType === "TABLET"
         ? tabSlides
         : slideNum,
+    // centerMode: true,
+    // centerPadding: "25%",
   };
+
+  const page = 1;
 
   return (
     <Fragment>
@@ -60,15 +62,18 @@ export const SliderComponent = ({
           <Slider {...settings} ref={sliderRef}>
             {data?.length > 0 &&
               data?.map((item, index) => (
-                <FullWidthBgImage
-                  key={index}
-                  image={item?.image}
-                  video={item?.video}
-                  text={item?.title}
-                  label={label}
-                  borderRadius={borderRadius}
-                  height={height}
-                />
+                <Box className="videoWrapper">
+                  <VideoPlayer
+                    key={index}
+                    // thumbnail={item?.thumbnail}
+                    src={item?.video}
+                    reverseLayout
+                    index={page * 100000}
+                    currentIdx={idx}
+                    setIndex={setIdx}
+                    page={0}
+                  />
+                </Box>
               ))}
           </Slider>
           {screenType !== "MOBILE" && showRightArrow && (

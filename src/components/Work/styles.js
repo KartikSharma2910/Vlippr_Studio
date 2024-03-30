@@ -35,8 +35,12 @@ const styles = {
       "-webkit-text-stroke-width": "2px",
       "-webkit-text-stroke-color": "white",
       "-webkit-text-fill-color": "transparent",
-      backgroundColor: " rgba(0, 0, 0, 0.5)",
+      // backgroundColor: " rgba(0, 0, 0, 0.5)",
     },
+  },
+
+  videoPlayer: {
+    marginTop: "4rem",
   },
 };
 

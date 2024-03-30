@@ -4,7 +4,8 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     width: "100%",
-    position: "sticky",
+    position: "fixed",
+    // position: "sticky",
     top: 0,
     zIndex: 100,
     height: "65px",
@@ -12,7 +13,7 @@ const styles = {
       xs: "15px 40px",
       md: "15px 60px",
     },
-    transition: "all 400ms",
+    transition: "all 0.5s ease",
   },
 
   image: {

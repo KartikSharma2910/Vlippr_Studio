@@ -13,7 +13,9 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: #131313;
+  /* background-color: #131313; */
+  background-color: black;
+  background-blend-mode: multiply;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   transition: all 400ms ease;
@@ -24,7 +26,7 @@ body {
 }
 
 section {
-  min-height: 750px;
+  min-height: 100vh;
 }
 
 .container {

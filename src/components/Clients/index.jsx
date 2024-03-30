@@ -19,6 +19,8 @@ const Clients = () => {
         <Box>
           <SliderComponent
             autoplay
+            showLeftArrow
+            showRightArrow
             autoplaySpeed={6000}
             slideNum={3}
             data={clientData}

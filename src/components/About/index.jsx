@@ -6,7 +6,17 @@ import styles from "./styles";
 
 const About = () => {
   return (
-    <Box className="container" component="section" id="about">
+    <Box
+      className="container"
+      component="section"
+      id="about"
+      sx={{
+        minHeight: {
+          xs: "min-content !important",
+          sm: "100vh",
+        },
+      }}
+    >
       <Box sx={styles.boxer}>
         <Box sx={styles.container}>
           <Box className="welcome" sx={styles.heading}>
@@ -33,6 +43,8 @@ const About = () => {
       <Box sx={{ marginTop: "3rem" }}>
         <SliderComponent
           autoplay
+          showLeftArrow
+          showRightArrow
           autoplaySpeed={6000}
           slideNum={5}
           data={aboutCarousalData}

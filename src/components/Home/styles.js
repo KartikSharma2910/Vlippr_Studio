@@ -5,6 +5,7 @@ const styles = {
     justifyContent: "space-between",
     mixBlendMode: "difference",
     backgroundColor: "#0A0A0A",
+    position: "relative",
   },
 
   coverImage: {
@@ -94,6 +95,14 @@ const styles = {
     },
     border: "1px solid white",
     color: "white",
+  },
+
+  backgroundSlider: {
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    position: "absolute",
   },
 };
 
