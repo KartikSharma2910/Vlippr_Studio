@@ -1,9 +1,23 @@
-import About from "./About";
-import Clients from "./Clients";
-import Features from "./Features";
-import Home from "./Home";
+import About from "./LandingPage/About";
+import Clients from "./LandingPage/Clients";
+import Features from "./LandingPage/Features";
+import Home from "./LandingPage/Home";
+import Studio from "./LandingPage/Studio";
+import Work from "./LandingPage/Work";
 import Navbar from "./Navbar";
-import Studio from "./Studio";
-import Work from "./Work";
+import Community from "./Studios/Community";
+import ExploreStudio from "./Studios/ExploreStudio";
+import StudioHome from "./Studios/StudioHome";
 
-export { About, Clients, Features, Home, Navbar, Studio, Work };
+export {
+  About,
+  Clients,
+  Community,
+  ExploreStudio,
+  Features,
+  Home,
+  Navbar,
+  Studio,
+  StudioHome,
+  Work,
+};

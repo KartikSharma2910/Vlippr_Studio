@@ -4,11 +4,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, Drawer, IconButton, Slide } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { navbar } from "../../constants";
 import { useResponsive } from "../../hooks/useResponsive";
 import styles from "./styles";
 
-const Navbar = () => {
+const Navbar = ({ data = [] }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { screenType } = useResponsive();
@@ -75,7 +74,7 @@ const Navbar = () => {
             <Box sx={styles.drawerContent}>
               <Box sx={styles.drawerHeads}>Menu</Box>
               <Box sx={styles.drawerItemWrapper} onClick={handleDrawerClose}>
-                {navbar.map(({ label, link }, index) => (
+                {data.map(({ label, link }, index) => (
                   <Box
                     key={index}
                     component="a"
@@ -102,7 +101,7 @@ const Navbar = () => {
             borderColor: isScrolled ? "black" : "white",
           }}
         >
-          {navbar.map(({ label, link }, index) => (
+          {data.map(({ label, link }, index) => (
             <Box
               key={index}
               component="a"

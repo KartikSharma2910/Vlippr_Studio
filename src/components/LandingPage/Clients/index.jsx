@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { clientData, clients } from "../../constants";
-import { SliderComponent } from "../SliderComponent";
+import { clientData, clients } from "../../../constants";
+import { SliderComponent } from "../../SliderComponent";
 import styles from "./styles";
 
 const Clients = () => {

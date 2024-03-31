@@ -1,25 +1,14 @@
-import React, { Fragment } from "react";
-import {
-  About,
-  Clients,
-  Features,
-  Home,
-  Navbar,
-  Studio,
-  Work,
-} from "./components";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./Pages/landingPage";
+import StudioPage from "./Pages/studioPage";
 
 const App = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <Home />
-      <About />
-      <Features />
-      <Work />
-      <Studio />
-      <Clients />
-    </Fragment>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/studio" element={<StudioPage />} />
+    </Routes>
   );
 };
 

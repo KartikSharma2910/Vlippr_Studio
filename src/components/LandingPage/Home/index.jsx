@@ -1,11 +1,14 @@
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { Box, Button } from "@mui/material";
 import React from "react";
-import { homeCarousalData } from "../../constants";
-import { SliderComponent } from "../SliderComponent";
+import { homeCarousalData } from "../../../constants";
+import { SliderComponent } from "../../SliderComponent";
 import styles from "./styles";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <Box className="container" component="section" id="#" sx={styles.wrapper}>
       <Box sx={styles.dummy}></Box>
@@ -19,7 +22,11 @@ const Home = () => {
         <Box sx={styles.description}>
           Find the Perfect Space for Your Creativity
         </Box>
-        <Button endIcon={<ArrowOutwardIcon />} sx={styles.button}>
+        <Button
+          endIcon={<ArrowOutwardIcon />}
+          sx={styles.button}
+          onClick={() => navigate("/studio")}
+        >
           Explore Studios Now
         </Button>
       </Box>

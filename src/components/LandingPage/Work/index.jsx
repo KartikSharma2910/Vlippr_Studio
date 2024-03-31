@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { featuredWorkData } from "../../constants";
-import { VideoSlider } from "../VideoSlider";
+import { featuredWorkData } from "../../../constants";
+import { VideoSlider } from "../../VideoSlider";
 import styles from "./styles";
 
 const Work = () => {

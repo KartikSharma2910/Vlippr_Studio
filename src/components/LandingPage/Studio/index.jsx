@@ -1,8 +1,8 @@
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { Box, Button } from "@mui/material";
 import React from "react";
-import { studioData } from "../../constants";
-import { SliderComponent } from "../SliderComponent";
+import { studioData } from "../../../constants";
+import { SliderComponent } from "../../SliderComponent";
 import styles from "./styles";
 
 const Studio = () => {
