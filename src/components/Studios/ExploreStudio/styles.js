@@ -55,16 +55,33 @@ const styles = {
     rowGap: "20px",
   },
 
-  image: {
+  imageContainer: {
     width: {
       xs: "100%",
       sm: "47%",
       md: "24%",
     },
+    position: "relative",
+  },
+
+  image: {
+    width: "100%",
     height: "120px",
     objectFit: "cover",
     objectPosition: "center",
     filter: "grayscale(100%)",
+    transition: "all 0.3s",
+
+    "&:hover": {
+      cursor: "pointer",
+      filter: "grayscale(0%)",
+    },
+  },
+
+  imageText: {
+    fontSize: "14px",
+    textAlign: "center",
+    marginTop: "0.8rem",
   },
 };
 
