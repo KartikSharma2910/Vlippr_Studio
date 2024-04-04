@@ -183,3 +183,188 @@ export const clients = [
   "https://s3-alpha-sig.figma.com/img/0529/c15a/ff0360ce89596af2133415d5fc20d54b?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j~WLe-HW5RNeYmokuOVcH4jgqnORg9irQNSG7-qnJqsxl0XpeREJXh77y8MEQxTUwTOTYO1RjyVYT4FMM-sdpWB09p2U2RSoyZPb7nPw4KID2KIRaO81KnMVUikZ3AhBQ5xWvW09X~Iy8Y8JxA1lsvOPinK7LlLvqI-HPVoRp3twZWnJDdoE1jZCMnlAl3XlzIY9Of2AgZgRAr7YroGk2qc4kMNsrGo4CBhq1-sJsLIU89B0d9XFTG69jwn-FIbdwlsdFg4bbVYF6tCHaHASNGHF~PyauQ5gWcdXqdCAciUKuMfwoACskVzDhevvLusv4p3ruqUeU0pClj3fgD6i0Q__",
   "https://s3-alpha-sig.figma.com/img/3ade/63ef/0a73dd1bfc7742b965e759a9b94e5535?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d0WOed66j2DAXR~HIuIi-zr7Vm~IWL1kf35rsjaqF4MD8JEHtB-FpeXgWvdAEk3UtkxFqGSLO2VGYG19y1hXJG9LBXFm5wvNGkqF7xIVx6k0-mCaMpYtTnrOeEquh9Ep3y7LPvt6iHUQLu8ASsFCVUMj3TMOx7f2Yzl1~pFLeVzvC1WR0j0xEdevJGAWNxKtjB-x9WUWSqYcsD9qf79IKOd35RTeRtjq-l3h2xhkp9tpDupPfQfO5P10~VZGr0LfCszRK0TJPx1snXMLkYiNLAHTq4azHS8D-Ez2Dl~minUSY6sAemNi3ERfQ-u38f81reX7XvWforPAelJ6WDNvRA__",
 ];
+
+export const cards = [
+  {
+    cardType: "photography",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "photography",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "photography",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "podcast",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "podcast",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "makeup",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+  {
+    cardType: "makeup",
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/4d81/abde/a763dab26b0d30d212f55d9cbc6376a4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bCSsTUZFV0zmsGEsKpHy1qa8UjleUhisdvsXEB-dXMDaxrhs-JvRSuMquYxe88yuf7gizCuVZes0RWdZpdVtbNvZw6mXBuVYvj1-ffiHT9Zn7XPEuRrAJiMuN8GULCc0zWjh5OoYubppkD1OtGf9gKYZ7TD3Xk69ILNQcvc4LWKeo~q8b7VDbLTnFn0PxTYofiCyRv6lF3wDKaYCBTIY4xkKZZTAoQitlz2OGp8ESxRLL4x~HHTbOqeMLaUMdsRlx1HBV0xYQXrpZnpRqMRyY5SgKDXTHbq9VCTdqMJsqzDpHJTvw2YNpC9-3Z8zHeiz~tqypRagAJK7ZOUBhIXFSg__",
+    heading: "GlamVibe",
+    place: "Kannur, Kerala",
+    distance: "4",
+    features: [
+      {
+        data: [
+          "Professional-grade lighting equipment",
+          "Variety of backdrops and props",
+          "Adjustable shooting areas",
+        ],
+        buttonLabel: "Explore",
+      },
+    ],
+    connectivity: [
+      {
+        price: "799",
+        facebook: "",
+        instagram: "",
+        whatsapp: "",
+      },
+    ],
+  },
+];

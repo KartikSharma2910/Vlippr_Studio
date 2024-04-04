@@ -69,7 +69,6 @@ const styles = {
     height: "120px",
     objectFit: "cover",
     objectPosition: "center",
-    filter: "grayscale(100%)",
     transition: "all 0.3s",
 
     "&:hover": {
@@ -82,6 +81,110 @@ const styles = {
     fontSize: "14px",
     textAlign: "center",
     marginTop: "0.8rem",
+  },
+
+  cardContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
+    rowGap: 3,
+    columnGap: 2,
+    marginTop: "4rem",
+  },
+
+  card: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "15px",
+    width: {
+      xs: "100%",
+      sm: "48%",
+      md: "31%",
+    },
+    padding: "10px",
+    backgroundColor: "#1B1A1B",
+  },
+
+  cardInsideContainer: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+  },
+
+  cardImage: {
+    width: "100%",
+    objectFit: "cover",
+  },
+
+  cardHeading: {
+    fontSize: "22px",
+    fontWeight: 600,
+  },
+
+  cardPlace: {
+    fontSize: "12px",
+    fontWeight: 300,
+  },
+
+  divider: {
+    width: "100%",
+    borderTop: "0.5px solid #8C8C8C",
+    opacity: "0.5",
+  },
+
+  cardList: {
+    fontSize: "12px",
+    color: "#8C8C8C",
+  },
+
+  cardButton: {
+    marginTop: "1rem",
+    width: "170px",
+    fontSize: "13px",
+    color: "white",
+    background: "linear-gradient(98.88deg, #6C7BFF -2.99%, #00C2FF 102.28%)",
+  },
+
+  cardFooter: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+
+  cardPrice: {
+    fontSize: "11px",
+    marginBottom: "0.5rem",
+  },
+
+  cardIcons: {
+    display: "flex",
+    gap: 1.5,
+  },
+
+  cardIcon: {
+    fontSize: "22px",
+    color: "#8C8C8C",
+  },
+
+  footerButtonWrap: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "4rem",
+  },
+
+  footerButton: {
+    width: {
+      xs: "230px",
+      sm: "260px",
+    },
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
+    border: "1px solid white",
+    color: "white",
   },
 };
 
