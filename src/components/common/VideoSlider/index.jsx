@@ -4,7 +4,7 @@ import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { useResponsive } from "../../hooks/useResponsive";
+import { useResponsive } from "../../../hooks/useResponsive";
 import VideoPlayer from "../VideoPlayer";
 import "./styles.css";
 

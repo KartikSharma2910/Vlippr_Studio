@@ -1,10 +1,10 @@
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { Box, Button } from "@mui/material";
 import React from "react";
-import { homeCarousalData } from "../../../constants";
-import { SliderComponent } from "../../SliderComponent";
-import styles from "./styles";
 import { useNavigate } from "react-router-dom";
+import { homeCarousalData } from "../../../constants";
+import { SliderComponent } from "../../common";
+import styles from "./styles";
 
 const Home = () => {
   const navigate = useNavigate();

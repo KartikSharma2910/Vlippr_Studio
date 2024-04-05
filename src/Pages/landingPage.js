@@ -1,13 +1,6 @@
 import React, { Fragment } from "react";
-import {
-  About,
-  Clients,
-  Features,
-  Home,
-  Navbar,
-  Studio,
-  Work,
-} from "../components";
+import { About, Clients, Features, Home, Studio, Work } from "../components";
+import { Footer, Navbar } from "../components/common";
 import { navbar } from "../constants";
 
 const LandingPage = () => {
@@ -20,6 +13,7 @@ const LandingPage = () => {
       <Work />
       <Studio />
       <Clients />
+      <Footer />
     </Fragment>
   );
 };

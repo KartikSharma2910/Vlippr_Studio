@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { aboutCarousalData } from "../../../constants";
-import { SliderComponent } from "../../SliderComponent";
+import { SliderComponent } from "../../common";
 import styles from "./styles";
 
 const About = () => {

@@ -1,5 +1,6 @@
 import React from "react";
-import { Navbar, RegistrationForm } from "../components";
+import { RegistrationForm } from "../components";
+import { Footer, Navbar } from "../components/common";
 import { studioNavbar } from "../constants";
 
 const RegistrationPage = () => {
@@ -7,6 +8,7 @@ const RegistrationPage = () => {
     <>
       <Navbar data={studioNavbar} />
       <RegistrationForm />
+      <Footer />
     </>
   );
 };

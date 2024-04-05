@@ -4,11 +4,11 @@ import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { useResponsive } from "../../hooks/useResponsive";
+import { useResponsive } from "../../../hooks/useResponsive";
 import { FullWidthBgImage } from "./FullWidthBgImage";
 import "./styles.css";
 
-export const SliderComponent = ({
+const SliderComponent = ({
   data,
   label,
   slideNum,
@@ -81,3 +81,5 @@ export const SliderComponent = ({
     </Fragment>
   );
 };
+
+export default SliderComponent;

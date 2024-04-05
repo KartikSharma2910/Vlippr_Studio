@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, Drawer, IconButton, Slide } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useResponsive } from "../../hooks/useResponsive";
+import { useResponsive } from "../../../hooks/useResponsive";
 import styles from "./styles";
 
 const Navbar = ({ data = [] }) => {

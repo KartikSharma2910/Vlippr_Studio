@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import { Community, ExploreStudio, Navbar, StudioHome } from "../components";
+import { Community, ExploreStudio, StudioHome } from "../components";
+import { Footer, Navbar } from "../components/common";
 import { studioNavbar } from "../constants";
 
 const StudioPage = () => {
@@ -9,6 +10,7 @@ const StudioPage = () => {
       <StudioHome />
       <ExploreStudio />
       <Community />
+      <Footer />
     </Fragment>
   );
 };
