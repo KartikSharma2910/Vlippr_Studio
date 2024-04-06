@@ -1,3 +1,4 @@
+import Explore from "./Explore";
 import About from "./LandingPage/About";
 import Clients from "./LandingPage/Clients";
 import Features from "./LandingPage/Features";
@@ -13,6 +14,7 @@ export {
   About,
   Clients,
   Community,
+  Explore,
   ExploreStudio,
   Features,
   Home,

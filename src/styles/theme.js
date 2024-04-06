@@ -55,6 +55,10 @@ theme = createTheme(theme, {
             "&::-webkit-scrollbar-thumb:hover": {
               backgroundColor: theme.palette.custom.label,
             },
+
+            "& .MuiSvgIcon-root": {
+              fill: "white", // Change the color of the SVG icon
+            },
           },
         },
       },
@@ -109,6 +113,7 @@ theme = createTheme(theme, {
           },
           height: "50px",
           boxSizing: "border-box",
+          color: "white",
           borderRadius: 5,
           position: "relative",
           borderWidth: 1,
@@ -136,6 +141,9 @@ theme = createTheme(theme, {
           "& input::-webkit-inner-spin-button": {
             display: "none",
             MozAppearance: "none",
+          },
+          "& .MuiSvgIcon-root": {
+            fill: "white", // Change the color of the SVG icon
           },
         },
       },

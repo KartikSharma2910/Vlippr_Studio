@@ -6,9 +6,11 @@ import Navbar from "./Navbar";
 import SliderComponent from "./SliderComponent";
 import VideoPlayer from "./VideoPlayer";
 import { VideoSlider } from "./VideoSlider";
+import Date from "./Date";
 
 export {
   Checkbox,
+  Date,
   DropDown,
   Footer,
   Input,
