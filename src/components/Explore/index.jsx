@@ -55,11 +55,7 @@ const Explore = () => {
     <Box>
       <Navbar data={studioNavbar} />
       <Box sx={styles.upperContainer}>
-        <Box
-          sx={styles.image}
-          component="img"
-          src="https://s3-alpha-sig.figma.com/img/8171/8121/a0b36023f0a40b3f448442ade52ca6bc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BJ3O97jSDe9oEH3HzM1eGqlTYuCmXV08QfczeUPeeUWlTSkPivYMmXtAwbCG~D3eTvEeOrkRdcdoEH8KBJsO8Hze5bR6AUgxxhihYxlmgiRT1J2hb4wwicIuKGOuEKsPZ7yB2Fj4s4K0eMgCt660cX0tFMPbOZ2824fGEJjQkDaADqTGgxjYNFbCONncPP2MBZwbO6CLq-jxQS4pWX~UC2JJLyP8RQS9IBHI3MOQgT5j3Jzc8OzMbAu1vZAnO-tJ3W03zcqUzTaEgXBLKqT6fLgNIFc8Rxsh6zVjpmcEO24TrhMdZQD44gobZycvjbnpnYRtc0F1qAzhn3ypogG4gg__"
-        />
+        <Box sx={styles.image} component="img" src="/explore.jpeg" />
       </Box>
       <Box sx={styles.stripeWrapper}>
         {navigators.map((item, index) => {

@@ -37,23 +37,9 @@ const Features = () => {
       </Box>
       <Box>
         <Box sx={styles.imageWrapper}>
-          <Box
-            sx={styles.image}
-            component="img"
-            src="https://s3-alpha-sig.figma.com/img/4666/87ef/98b4b161d2750ae0bb29ee1c5d9f5cb7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jePLquruEFnGYbw2v1F9wA~BQxq38fZr1OSjpzg51sKn2p3y1P3N4V2OuZX5AJ9WjKgkFHhtFrNkMG5FDmhZrPYhRisyMRsj-oLnMxv8ygVsY2~lA6zO~AeG24R0H-jKS1pHBge9prMPUXajSDBg7WiqH0i0W-M~LMKK34r75s3l1gcOF6uGq2iWSliuZ-NbhtWA~YFq~vDGSg2WlI8zB3y2Dk5gbSfstQM-1NSPlmOaXud4wNUyk9gsIlNRKyibAQ7ghELxfpeeR74YEmYREp4pUj1mBhbjNr7ju8NaNdTVFJbnM5Dqvy44DxvpumPNH~CizR79ARpb~cziSbsuOg__"
-          />
-
-          <Box
-            sx={styles.image}
-            component="img"
-            src="https://s3-alpha-sig.figma.com/img/6e06/fe39/5c6a298ba1aafd2b440bef712e088c0e?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X5mhDmEDOp0TNuX4u521EU4-XTozGoSCYPOLFHl3oOvjH1VFm-SV~h4U4Fqu2S2BMTl2HTM3-PD83ffSYMFdkiqDiOLkw5pcVYc~gHyvr2bx75pzJPDpTDEnimtdiGZBrTq2BkQ8aTx1fvd29hjcHgMENgR83y72ApTGU7bG4Q2N8Iphd~8pfLJiL8v9ngHz-wptiyd8AJI0uoT3zJSydUq7eh3Sl94HGTl9t3RyrDV7a~JcJkPy2P7RFhBNfRfrWzfXJ5bU1~aKLYoHwNggypliEEoj3BJkOeaairxp0IrXwtUe2wTbsbpYI2JtNXKrSX-7yjP6fYE6mhOGbziXug__"
-          />
-
-          <Box
-            sx={styles.image}
-            component="img"
-            src="https://s3-alpha-sig.figma.com/img/b239/90de/738ee66e1e0ce1815d5c137a1a015ffd?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z6K0X0j6qDhXV6AJ0IUZ2hh77zRwr79sUI6FSTmreHKuLS5Z5dO4q328YJoZO3K2n9SXf8Bib-rhOBbkDol-n3D62RFgOgisz9lbOgX6VukOa9jnUma9XrLyY-Ej~E0KkEw23mNNrpTHmD8xP9kM8jbsh24Zr2dvoBo~qjBpkBJ7vLKzRonzRUxGpjQFkuTfsogWzMPg-5LEn91wyCjNTgq-rjmfYrbktRga4uqbucuLs8Azz13wOyCvBs0ldNrBIwbmJ5MHJcwppL9GaFO1Zpkj4XqmicDFkVr2EZVX7bs-toqarYkUv8DAZ9VDjyhJYv~KfMBBcjO5FXSp6c99sg__"
-          />
+          <Box sx={styles.image} component="img" src="/videoMan.jpeg" />
+          <Box sx={styles.image} component="img" src="/blackVideo.jpeg" />
+          <Box sx={styles.image} component="img" src="/flags.jpeg" />
         </Box>
         <Box sx={styles.cardWrapper}>
           {cardsData.map(({ heading, description, buttonLabel }, index) => {
