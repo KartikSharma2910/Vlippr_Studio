@@ -1,5 +1,6 @@
 import { Box, Button } from "@mui/material";
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Checkbox } from "../common";
 import AdditionalService from "./AdditionalService";
@@ -11,11 +12,13 @@ import StudioFeatures from "./StudioFeatures";
 import styles from "./styles";
 
 const RegistrationForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const {
     control,
     formState: { errors },
     trigger,
-    getValues,
+    watch,
   } = useForm({
     defaultValues: {
       fullName: "",
@@ -51,6 +54,48 @@ const RegistrationForm = () => {
     mode: "all",
     criteriaMode: "all",
   });
+
+  const formData = new FormData();
+  formData.append("name", watch("fullName"));
+  formData.append("email", watch("email"));
+  formData.append("phone", watch("phoneNumber"));
+  formData.append("company", watch("companyName"));
+  formData.append("studio_name", watch("studioName"));
+  formData.append("studio_type", watch("studioType"));
+  formData.append("address", watch("address"));
+  formData.append("city", watch("city"));
+  formData.append("state", watch("state"));
+  formData.append("zip_code", watch("zipCode"));
+  formData.append("description", watch("studioDescription"));
+  formData.append("hourly_rate", watch("hourly"));
+  formData.append("full_day_rate", watch("fullDay"));
+
+  const features = [];
+  Object.entries(watch()).forEach(([key, value]) => {
+    if (key.endsWith("Feature") && value) {
+      features.push(key.replace("Feature", ""));
+    }
+  });
+  formData.append("features[]", [...features]);
+  formData.append("half_day_rate", watch("halfDay"));
+
+  const handleSubmit = async () => {
+    setIsLoading(true);
+
+    const response = await axios.post(
+      "http://vlippr-php.ap-south-1.elasticbeanstalk.com/Script/api.php?v=1.0&platform=desktop&type=regsiter_studio_request",
+      formData,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          api_key: "1312a113c58715637a94437389326a49",
+        },
+      }
+    );
+    console.log(response.data);
+
+    setIsLoading(false);
+  };
 
   const forms = [
     {
@@ -126,11 +171,10 @@ const RegistrationForm = () => {
         </Box>
         <Button
           sx={styles.button}
-          onClick={() =>
-            trigger().then((res) => res && console.log(getValues()))
-          }
+          onClick={() => trigger().then((res) => res && handleSubmit())}
+          disabled={isLoading}
         >
-          Register My Studio
+          {isLoading ? "Submitting..." : "Register My Studio"}
         </Button>
       </Box>
     </Box>
